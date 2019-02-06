@@ -1,6 +1,7 @@
 package instago
 
 import (
+	"fmt"
 	"encoding/json"
 	"strings"
 	"time"
