@@ -66,6 +66,7 @@ func (m *IGApiManager) GetAllPostCode(username string) (codes []string, err erro
 
 // Given a user id, return all story highlights of the user.
 func (m *IGApiManager) GetAllStoryHighlights(userid string) (trays []IGStoryHighlightsTray, err error) {
+	fmt.Println(userid)
 	subtrays, err := m.GetUserStoryHighlights(userid)
 	if err != nil {
 		return
